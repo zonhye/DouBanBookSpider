@@ -1,0 +1,5 @@
+mongodb统计语句
+
+db.getCollection('book_by_id').find({"people_num":{$gte:1000}, "rating":{$gte:7.0}})
+db.getCollection('book_by_id').find({})
+db.getCollection('book_by_id').find({}).count(1)
